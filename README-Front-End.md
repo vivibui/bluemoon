@@ -1,4 +1,4 @@
-# Final Capstone React Front-end Project Starter
+# FReact Front-end Project Starter
 ​
 This is the React starter project for the final capstone. This document walks you through how to set up and run the project. 
 ​
