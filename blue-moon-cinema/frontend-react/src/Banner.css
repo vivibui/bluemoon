@@ -1,0 +1,37 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    /* position: relative;  */
+    align-items: center;
+    /* background-color: black; */
+}
+
+.banner img{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    /* background: rgba(11, 7, 241, 0.3); */
+
+}
+
+.text-below-banner{
+    color: white; 
+}
+
+.banner-text h2{
+    font-size: 2rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.banner-text p {
+    font-size: irem; 
+}
