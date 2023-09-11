@@ -1,4 +1,4 @@
-# Final Capstone Starter Project
+# Starter Project
 
 
 ## Spring Boot
@@ -32,8 +32,8 @@ The database superuser—meaning `postgres`—must only be used for database adm
 
 | Username | Description |
 | -------- | ----------- |
-| `final_capstone_owner` | This user is the schema owner. It has full access—meaning granted all privileges—to all database objects within the `capstone` schema and also has privileges to create new schema objects. This user can be used to connect to the database from PGAdmin for administrative purposes. |
-| `final_capstone_appuser` | The application uses this user to make connections to the database. This user is granted `SELECT`, `INSERT`, `UPDATE`, and `DELETE` privileges for all database tables and can `SELECT` from all sequences. The application datasource has been configured to connect using this user. |
+| `owner` | This user is the schema owner. It has full access—meaning granted all privileges—to all database objects within the `capstone` schema and also has privileges to create new schema objects. This user can be used to connect to the database from PGAdmin for administrative purposes. |
+| `appuser` | The application uses this user to make connections to the database. This user is granted `SELECT`, `INSERT`, `UPDATE`, and `DELETE` privileges for all database tables and can `SELECT` from all sequences. The application datasource has been configured to connect using this user. |
 
 ### Datasource
 
@@ -85,28 +85,17 @@ Most of the functionality related to Security is located in the `/src/main/java/
 
 ### Authentication Controller
 
-There is a single controller provided in the `com.techelevator.controller` package called `AuthenticationController.java`.
+There is a single controller provided in the `controller` package called `AuthenticationController.java`.
 
 This controller contains the `/login` and `/register` routes and works with the React starter as is. If you need to modify the user registration form, start here.
 
 The authentication controller uses the `JdbcUserDao` to read and write data from the users table.
 
-## Sample Application
-
-A sample application called `sample-application-tenmo' with a React front-end client and Java back-end server has been provided.  It also includes a Java front-end cliend as well as a Vue framework front-end client.
-
-Use this for examples on how to accomplish features you want to include in your final capstone app.
-
-Example code that works is much more reliable than anything your can find in a Google search
-
-
-## Testing
-
 
 ### DAO integration tests
 
-`com.techelevator.dao.BaseDaoTests` has been provided for you to use as a base class for any DAO integration test. It initializes a Datasource for testing and manages rollback of database changes between tests.
+`dao.BaseDaoTests` has been provided for you to use as a base class for any DAO integration test. It initializes a Datasource for testing and manages rollback of database changes between tests.
 
-`com.techelevator.dao.JdbUserDaoTests` has been provided for you as an example for writing your own DAO integration tests.
+`dao.JdbUserDaoTests` has been provided for you as an example for writing your own DAO integration tests.
 
 Remember that when testing, you're using a copy of the real database. The schema for the test database is defined in the same schema script for the real database, `database/schema.sql`. The data for the test database is defined separately within `/src/test/resources/test-data.sql`.
