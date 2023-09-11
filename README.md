@@ -1,4 +1,4 @@
-# blue-moon-cinema
+# Blue Moon Cinema
 Full-stack Website in Java and React JS 
 
 ## Spring Boot
