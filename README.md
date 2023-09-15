@@ -1,6 +1,9 @@
 # Blue Moon Cinema
 Full-stack Website in Java and React JS 
 
+## Description
+The core functionality of this website is to view movie, select showtime by filtered dates, reserve seats, and view reservation history.
+
 ## Spring Boot
 
 Note: Spring Boot has been configured to run on port `9000` for this project. During our class sessions we used port `8080`. It's changed so as not to avoid any posible conflicts with other things that you may be running concurrently.
