@@ -4,7 +4,7 @@ Core functionality: view movies, select showtime by filtered dates, reserve seat
 
 ## Spring Boot
 
-Note: Spring Boot has been configured to run on port `9000` for this project. During our class sessions we used port `8080`. It's changed so as not to avoid any posible conflicts with other things that you may be running concurrently.
+Spring Boot has been configured to run on port `9000` for this project. 
 
 ## Database
 
