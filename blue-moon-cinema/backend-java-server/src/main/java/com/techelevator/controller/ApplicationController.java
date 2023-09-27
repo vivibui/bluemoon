@@ -4,12 +4,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class ApplicationController {
-    /****************************************************************************
-     * You application controller code should go here
-     ******************************************************************************/
-
-
-
 
     /**
      * Helper method to log API calls made to the server
