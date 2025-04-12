@@ -11,9 +11,9 @@ You will need to create a database called ***final_capstone*** in pgAdmin.
 
 Once the database is created open a `Query Tool` window for the ***final_capstone*** database so  you can run the **setup.sql** to created and populate the User table and populate it with several users.
 
-The **setup.sql** can be found in in the ***/final_capstone/backend-java-server/database*** folder.
+The **setup.sql** can be found in in the ***/backend-java-server/database*** folder.
 
-Navigate to the ***/final_capstone/backend-java-server/database*** folder in the *Query Tool* window then open and run the **setup.sql** file you should see in that folder.  There should be no errors.
+Navigate to the ***/backend-java-server/database*** folder in the *Query Tool* window then open and run the **setup.sql** file you should see in that folder.  There should be no errors.
 
 Several application users have been populated into the **users** table you can use to login to the application:
 
