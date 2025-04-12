@@ -41,10 +41,10 @@ A Datasource has been configured in `/src/resources/application.properties`. It 
 
 ```
 # datasource connection properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/final_capstone
-spring.datasource.name=final_capstone
-spring.datasource.username=final_capstone_appuser
-spring.datasource.password=finalcapstone
+spring.datasource.url=jdbc:postgresql://localhost:5432/{assigned_name}
+spring.datasource.name={assigned_name}
+spring.datasource.username={assigned_name}_appuser
+spring.datasource.password={assigned_name}
 ```
 
 ### JdbcTemplate
