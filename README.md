@@ -7,9 +7,9 @@ Spring Boot has been configured to run on port `9000` for this project.
 
 ## Database
 
-You will need to create a database called ***final_capstone*** in pgAdmin.
+You will need to create a database called ***{assigned_name}*** in pgAdmin.
 
-Once the database is created open a `Query Tool` window for the ***final_capstone*** database so  you can run the **setup.sql** to created and populate the User table and populate it with several users.
+Once the database is created open a `Query Tool` window for the ***{assigned_name}*** database so  you can run the **setup.sql** to created and populate the User table and populate it with several users.
 
 The **setup.sql** can be found in in the ***/backend-java-server/database*** folder.
 
@@ -32,12 +32,12 @@ The database superuser—meaning `postgres`—must only be used for database adm
 
 | Username | Description |
 | -------- | ----------- |
-| `owner` | This user is the schema owner. It has full access—meaning granted all privileges—to all database objects within the `capstone` schema and also has privileges to create new schema objects. This user can be used to connect to the database from PGAdmin for administrative purposes. |
+| `owner` | This user is the schema owner. It has full access—meaning granted all privileges—to all database objects within the `{assigned_name}` schema and also has privileges to create new schema objects. This user can be used to connect to the database from PGAdmin for administrative purposes. |
 | `appuser` | The application uses this user to make connections to the database. This user is granted `SELECT`, `INSERT`, `UPDATE`, and `DELETE` privileges for all database tables and can `SELECT` from all sequences. The application datasource has been configured to connect using this user. |
 
 ### Datasource
 
-A Datasource has been configured in `/src/resources/application.properties`. It connects to a database called ***final_capstone*** using the `final_capstone_appuser` database user. If you chose a different database name be sure to change it in the `/src/resources/application.properties` 
+A Datasource has been configured in `/src/resources/application.properties`. It connects to a database called ***final_capstone*** using the `{assigned_name}_appuser` database user. If you chose a different database name be sure to change it in the `/src/resources/application.properties` 
 
 ```
 # datasource connection properties
