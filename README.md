@@ -1,5 +1,4 @@
 # Blue Moon Cinema
-Full-stack Website in Java and React JS  
 Core functionality: view movies, select showtime by filtered dates, reserve seats, and view reservation history.
 
 ## Spring Boot
